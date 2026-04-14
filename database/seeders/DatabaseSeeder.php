@@ -25,30 +25,30 @@ class DatabaseSeeder extends Seeder
         ]);
 
         \App\Models\Film::create([
-            'title' => 'How to Lose a Guy in 10 Days',
-            'director' => 'Donald Petrie',
-            'year' => 2003,
-            'genre' => 'Romance / Comedy',
-            'description' => 'Benjamin Barry is an advertising executive and ladies man who, to win a big campaign, bets that he can make a woman fall in love with him in 10 days.',
-            'image' => 'https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p31388_p_v10_ac.jpg'
+            'title' => 'Rush Hour',
+            'director' => 'Brett Ratner',
+            'year' => 1998,
+            'genre' => 'Action | Comedy',
+            'description' => 'A Hong Kong detective is sent to Los Angeles to investigate the kidnapping of a Chinese diplomat\'s daughter.',
+            'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoqWyMA-oJ1QcTyS_7Uj461RDVzXpWOIswGRsrg4jQTKY-BWTh'
         ]);
 
         \App\Models\Film::create([
-            'title' => 'Inception',
-            'director' => 'Christopher Nolan',
-            'year' => 2010,
-            'genre' => 'Science Fiction',
-            'description' => 'A thief who steals corporate secrets through the use of dream-sharing technology.',
-            'image' => 'https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg'
+            'title' => 'How to Lose a Guy in 10 Days',
+            'director' => 'Donald Petrie',
+            'year' => 2003,
+            'genre' => 'Romance | Comedy',
+            'description' => 'Benjamin Barry is an advertising executive and ladies man who, to win a big campaign, bets that he can make a woman fall in love with him in 10 days.',
+            'image' => 'https://lh5.googleusercontent.com/proxy/7uvMEIVBLGdFh9kW-xJfHxk67pedSd0EzZVTB9xQidc2S5FDfbGM7fzSxsI8eLdQZk0ipb0r4mvdJhHIhC39uRVrMl9_y_ZC64-iyR_P_nPQQU8kES0jEUfFQNdaxQ'
         ]);
         
         \App\Models\Film::create([
-            'title' => 'The Dark Knight',
-            'director' => 'Christopher Nolan',
-            'year' => 2008,
-            'genre' => 'Action',
-            'description' => 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham.',
-            'image' => 'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg'
+            'title' => 'The Hangover',
+            'director' => 'Todd Phillips',
+            'year' => 2009,
+            'genre' => 'Comedy | Adventure',
+            'description' => 'A few days before his wedding, Doug Billings and his best men go to Las Vegas for a bachelor party. However, the next day, the friends realise that they have no recollection of the previous night.',
+            'image' => 'https://m.media-amazon.com/images/M/MV5BNDI2MzBhNzgtOWYyOS00NDM2LWE0OGYtOGQ0M2FjMTI2NTllXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg'
         ]);
     }
 }
