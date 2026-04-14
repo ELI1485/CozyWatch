@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
             'year' => 2014,
             'genre' => 'Horror',
             'description' => 'John and Mia Form are attacked by members of a satanic cult that uses their old doll as a conduit to make their life miserable.',
-            'image' => 'https://encrypted-tbn3.gstatic.com/images?q-tbn:ANd9GcRG8IrOvD_GTVqNgSpfr5PBzozy1coUVmBBAnUw4zBSJwZllzF-j'
+            'image' => 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG8IrOvD_6TVqNgSpfr5PBzozyleoUVmBBANuw4zBSJwZHzF-j'
         ]);
 
         \App\Models\Film::create([
