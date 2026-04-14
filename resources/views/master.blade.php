@@ -19,7 +19,7 @@
     <style>
         body {
             font-family: 'Outfit', sans-serif;
-            background-color: #0f172a;
+            background-color: #000000;
             color: #f8fafc;
             min-height: 100vh;
             display: flex;
@@ -28,8 +28,8 @@
         
         /* Custom Premium Colors */
         :root {
-            --bs-primary: #ff3366;
-            --bs-primary-rgb: 255, 51, 102;
+            --bs-primary: #C00000;
+            --bs-primary-rgb: 192, 0, 0;
         }
 
         .btn-primary {
@@ -38,39 +38,39 @@
         }
 
         .btn-primary:hover {
-            background-color: #e62e5c;
-            border-color: #e62e5c;
-            box-shadow: 0 4px 15px rgba(255, 51, 102, 0.4);
+            background-color: #8c0000;
+            border-color: #8c0000;
+            box-shadow: 0 4px 15px rgba(192, 0, 0, 0.4);
         }
         
         .text-brand {
             color: var(--bs-primary);
         }
 
-        /* Glassmorphism */
+        /* Glassmorphism - Black variations */
         .glass-navbar {
-            background: rgba(30, 41, 59, 0.8) !important;
+            background: rgba(15, 15, 15, 0.8) !important;
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .glass-card {
-            background: rgba(30, 41, 59, 0.6);
+            background: rgba(20, 20, 20, 0.7);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             border-radius: 1rem;
         }
 
         .form-control {
-            background-color: rgba(15, 23, 42, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(30, 30, 30, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             color: white;
         }
 
         .form-control:focus {
-            background-color: rgba(15, 23, 42, 0.8);
+            background-color: rgba(30, 30, 30, 0.8);
             border-color: var(--bs-primary);
-            box-shadow: 0 0 0 0.25rem rgba(255, 51, 102, 0.25);
+            box-shadow: 0 0 0 0.25rem rgba(192, 0, 0, 0.25);
             color: white;
         }
 
@@ -86,8 +86,8 @@
 
         .movie-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 51, 102, 0.3);
-            border-color: rgba(255, 51, 102, 0.5);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9), 0 0 15px rgba(192, 0, 0, 0.5);
+            border-color: rgba(192, 0, 0, 0.6);
         }
     </style>
 </head>
