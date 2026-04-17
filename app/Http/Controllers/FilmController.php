@@ -14,6 +14,13 @@ class FilmController extends Controller
     }
 
     public function createFilm(Request $request) {
+        $request->validate([
+            'title' => 'required|max:255',
+            'director' => 'required|max:255',
+            'year' => 'required|integer|min:1900|max:2100',
+            'genre' => 'required|max:100',
+        ]);
+
         $film = new Film();
         $film->title = $request->title;
         $film->director = $request->director;
@@ -44,7 +51,6 @@ class FilmController extends Controller
         $film->genre = $request->genre;
         $film->description = $request->description;
         
-        // Only update image if they provided a new one
         if ($request->image) {
             $film->image = $request->image;
         }

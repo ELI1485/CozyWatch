@@ -10,7 +10,6 @@
         </div>
 
         <div class="glass-card p-5">
-            <!-- IMPORTANT: Edit forms in Laravel must submit via POST, and spoof the PUT method inside -->
             <form action="{{ route('films.update', $film->id) }}" method="POST">
                 @csrf
                 @method('PUT')
