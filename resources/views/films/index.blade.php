@@ -16,33 +16,39 @@
                     
                     <div class="mb-3">
                         <label class="form-label text-secondary small text-uppercase fw-bold">Title</label>
-                        <input type="text" name="title" required value="{{ old('title') }}" class="form-control shadow-sm">
+                        <input type="text" name="title" required value="{{ old('title') }}" class="form-control shadow-sm @error('title') is-invalid @enderror">
+                        @error('title') <div class="invalid-feedback fw-bold">{{ $message }}</div> @enderror
                     </div>
 
                     <div class="row mb-3">
                         <div class="col-6">
                             <label class="form-label text-secondary small text-uppercase fw-bold">Director</label>
-                            <input type="text" name="director" required value="{{ old('director') }}" class="form-control shadow-sm">
+                            <input type="text" name="director" required value="{{ old('director') }}" class="form-control shadow-sm @error('director') is-invalid @enderror">
+                            @error('director') <div class="invalid-feedback fw-bold">{{ $message }}</div> @enderror
                         </div>
                         <div class="col-6">
                             <label class="form-label text-secondary small text-uppercase fw-bold">Year</label>
-                            <input type="number" name="year" required value="{{ old('year') }}" class="form-control shadow-sm">
+                            <input type="number" name="year" required value="{{ old('year') }}" class="form-control shadow-sm @error('year') is-invalid @enderror">
+                            @error('year') <div class="invalid-feedback fw-bold">{{ $message }}</div> @enderror
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label text-secondary small text-uppercase fw-bold">Genre</label>
-                        <input type="text" name="genre" required value="{{ old('genre') }}" class="form-control shadow-sm">
+                        <input type="text" name="genre" required value="{{ old('genre') }}" class="form-control shadow-sm @error('genre') is-invalid @enderror">
+                        @error('genre') <div class="invalid-feedback fw-bold">{{ $message }}</div> @enderror
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label text-secondary small text-uppercase fw-bold">Poster URL</label>
-                        <input type="text" name="image" placeholder="https://..." value="{{ old('image') }}" class="form-control shadow-sm">
+                        <input type="text" name="image" placeholder="https://..." value="{{ old('image') }}" class="form-control shadow-sm @error('image') is-invalid @enderror">
+                        @error('image') <div class="invalid-feedback fw-bold">{{ $message }}</div> @enderror
                     </div>
 
                     <div class="mb-4">
                         <label class="form-label text-secondary small text-uppercase fw-bold">Description</label>
-                        <textarea name="description" rows="3" class="form-control shadow-sm">{{ old('description') }}</textarea>
+                        <textarea name="description" rows="3" class="form-control shadow-sm @error('description') is-invalid @enderror">{{ old('description') }}</textarea>
+                        @error('description') <div class="invalid-feedback fw-bold">{{ $message }}</div> @enderror
                     </div>
 
                     <button type="submit" class="btn btn-primary w-100 py-2 fw-bold text-uppercase shadow">

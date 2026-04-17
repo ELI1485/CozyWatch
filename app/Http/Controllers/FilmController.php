@@ -19,6 +19,7 @@ class FilmController extends Controller
             'director' => 'required|max:255',
             'year' => 'required|integer|min:1900|max:2100',
             'genre' => 'required|max:100',
+            'description' => 'required'
         ]);
 
         $film = new Film();
