@@ -3,9 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FilmController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FilmController::class , 'getAllFilms'])->name('films.index');
 
 Route::get('/films', [FilmController::class, 'getAllFilms'])->name('films.index');
 Route::post('/films', [FilmController::class, 'createFilm'])->name('films.store');
