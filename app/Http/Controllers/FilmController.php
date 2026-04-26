@@ -45,6 +45,14 @@ class FilmController extends Controller
     }
 
     public function updateFilm(Request $request, $id) {
+        $request->validate([
+            'title' => 'required|max:255',
+            'director' => 'required|max:255',
+            'year' => 'required|integer|min:1900|max:2100',
+            'genre' => 'required|max:100',
+            'description' => 'required'
+        ]);
+        
         $film = Film::find($id);
         $film->title = $request->title;
         $film->director = $request->director;
