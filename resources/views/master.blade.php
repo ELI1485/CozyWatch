@@ -26,7 +26,6 @@
             flex-direction: column;
         }
         
-        /* Custom Premium Colors */
         :root {
             --bs-primary: #C00000;
             --bs-primary-rgb: 192, 0, 0;
@@ -47,7 +46,6 @@
             color: var(--bs-primary);
         }
 
-        /* Glassmorphism - Black variations */
         .glass-navbar {
             background: rgba(15, 15, 15, 0.8) !important;
             backdrop-filter: blur(10px);
@@ -74,7 +72,6 @@
             color: white;
         }
 
-        /* Movie Card specific styling */
         .movie-card {
             transition: all 0.3s ease;
             cursor: pointer;
@@ -93,7 +90,7 @@
 </head>
 <body>
 
-    <!-- Beautiful Navbar -->
+    <!-- Navbar -->
     <nav class="navbar glass-navbar sticky-top py-3">
         <div class="container">
             <a class="navbar-brand fw-bold text-white fs-3" href="{{ route('films.index') }}">

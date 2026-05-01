@@ -17,7 +17,10 @@
                 <div class="row mb-4">
                     <div class="col-md-9">
                         <label class="form-label text-secondary small text-uppercase fw-bold">Movie Title</label>
-                         <input type="text" name="title" required value="{{ $film->title }}" class="form-control form-control-lg bg-dark text-white shadow-none">
+                         <input type="text" name="title" required value="{{ $film->title }}" class="form-control form-control-lg bg-dark text-white shadow-none @error('title') is-invalid @enderror">
+                        @error('title')
+                            <div class="invalid-feedback fw-bold">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="col-md-3">
                         <label class="form-label text-secondary small text-uppercase fw-bold">Release Year</label>
